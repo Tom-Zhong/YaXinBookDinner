@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+<meta charset="utf-8"/>
+<title>亚信MVNO订餐系统</title>
+<script src="control.js" type="text/javascript">
+</script >
+<link href="./makeBeautiful.css" type="text/css" rel="stylesheet"/>
+<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+</head>
+<body align="center" background="./background.jpg" class="body" ><!--这里是body的class选择器，可以选择多次，并且能够选中子对象-->
+<div  id="all_locate" ><!--这里是切片器-->
+<img src="asiainfo.png" width="300" height="150" align="center"/><br/>
+<label style="font-size:50px;"><b>亚信MVNO部门加班餐预定系统</b></label></br></br>
+<b>输入姓名后自动查询订餐状态</b>
+</div>
+<br/>
+<div class="book_descibe">
+
+</div>
+<!--这里是表格的相对定位-->
+<div class="form_locate">
+<form method="POST" id="sheet_locate"><!--  这里是form表格用css定位的ID，ID选择器只能选择一次-->
+
+<table id="book_table" cellspacing="0" cellpadding="0" > 
+<tr> 
+
+<td>员工名 ：<input style="height:30px" type="text" id="un"  name="user_name" maxlength="4" onpropertychange="return check_user_book_dish_state()" oninput="return check_user_book_dish_state()" />
+<!-- 员工名使用了js和ajax技术，QAQ一直觉得前端简单的，做了才知道，想太多了-->
+</td><br/>
+
+</tr> 
+<tr> 
+
+
+<td> 订餐状态:<label id="book_state" for="user_name">这里是订餐状态</label><br/>
+</td>
+</tr> 
+</table> 
+</div>
+
+
+
+
+<div class="all_btn">
+<input type="button" value="订餐" id="book_dinner" class="btn btn-medium btn-green" disabled="true" onclick="return book_dinner_confirm()"  
+/>
+<input type="button" value="修改想吃的菜" id="change_dish" disabled="true" onclick="return change_dinner_confirm()" class="btn btn-medium btn-orange"/>
+<input type="button" value="取消订餐" id="cancel_dinner" disabled="true" onclick="return cancle_book_dinner_confirm()" class="btn btn-medium btn-red"
+/>
+<a href="showUserList.php"target=_blank><input type="button" value="后台管理" id="manage_user" class="btn btn-medium btn-gray"  /></a><br/>
+</form>
+
+
+
+
+<script>
+
+document.write(Date());
+</script>
+</div>
+
+<hr style="display:none"/>
+</body>
+
+</html>
+
+
+

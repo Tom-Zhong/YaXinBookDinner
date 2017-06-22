@@ -1,0 +1,48 @@
+body{
+
+
+
+
+
+color:#fffbf0;
+font-size:40px;
+
+}
+ 
+
+
+/* Table Head */
+#table_s thead th {
+
+color: #fffbf0;
+border-bottom-width: 0;
+}
+
+/* Column Style */
+#table_s td {
+color: #fffbf0;
+font-size:40px;
+
+}
+/* Heading and Column Style */
+#table_s tr, #table_s th {
+border-width: 0px;
+border-style: solid;
+color: #fffbf0;
+font-size:40px;
+}
+
+/* Padding and font style */
+#table_s td, #table_s th {
+padding: 5px 10px;
+
+font-family: Verdana;
+font-weight: bold;
+}
+caption{
+
+font-family: Verdana;
+font-weight: bold;
+font-size:60px;
+
+}
